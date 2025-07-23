@@ -18848,7 +18848,7 @@ tT:function tT(a){this.a=a},
 ws:function ws(a){var _=this
 _.d=a
 _.r=_.f=_.e=$
-_.c=_.a=_.as=null},
+_.c=_.a=_.at=_.as=null},
 a6Q(a,b){if(b<0)A.a1(A.cO("Offset may not be negative, was "+b+"."))
 else if(b>a.c.length)A.a1(A.cO("Offset "+b+u.D+a.gt(0)+"."))
 return new A.zz(a,b)},
@@ -56944,26 +56944,27 @@ r=A.b([],r)
 s=A.b([],t.sH)
 return new A.ws(new A.tS(3,q,r,s,$.aM()))}}
 A.ws.prototype={
-aA(){var s,r,q=this,p="https://cloud.appwrite.io/v1",o="https://",n="http://",m="https://fra.cloud.appwrite.io/v1",l="6880fb5f0021b981f5c5"
-q.b2()
-s=new A.LF(p)
+aA(){var s,r,q,p=this,o="https://cloud.appwrite.io/v1",n="https://",m="http://",l="https://fra.cloud.appwrite.io/v1",k="6880fb5f0021b981f5c5"
+p.b2()
+s=new A.LF(o)
 s.d=new A.KZ(new v.G.AbortController())
-B.c.ls(B.c.ls(p,o,"wss://"),n,"ws://")
+B.c.ls(B.c.ls(o,n,"wss://"),m,"ws://")
 r=t.N
 s.b=A.aj(["content-type","application/json","x-sdk-name","Flutter","x-sdk-platform","client","x-sdk-language","flutter","x-sdk-version","17.0.2","X-Appwrite-Response-Format","1.7.0"],r,r)
 s.c=A.v(r,r)
 s.qE()
-if(!B.c.af(m,n)&&!B.c.af(m,o))A.a1(A.KF("Invalid endpoint URL: https://fra.cloud.appwrite.io/v1",null,null,null))
-s.a=m
-B.c.ls(B.c.ls(m,o,"wss://"),n,"ws://")
-s.c.l(0,"project",l)
-s.b.l(0,"X-Appwrite-Project",l)
-q.e=s
-q.f=new A.YC(s)
-q.r=new A.Mp(s)
-s=A.uH().gHA().i(0,"invoiceid")
-q.as=s
-A.a8J("InvoiceId from URL: "+A.n(s))},
+if(!B.c.af(l,m)&&!B.c.af(l,n))A.a1(A.KF("Invalid endpoint URL: https://fra.cloud.appwrite.io/v1",null,null,null))
+s.a=l
+B.c.ls(B.c.ls(l,n,"wss://"),m,"ws://")
+s.c.l(0,"project",k)
+s.b.l(0,"X-Appwrite-Project",k)
+p.e=s
+p.f=new A.YC(s)
+p.r=new A.Mp(s)
+q=A.uH()
+p.as=q.gHA().i(0,"invoiceid")
+p.at=q.k(0)
+A.a8J("InvoiceId from URL: "+A.n(p.as))},
 j2(){var s=0,r=A.P(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c
 var $async$j2=A.L(function(a,b){if(a===1){o.push(b)
 s=p}while(true)switch(s){case 0:d=n.d
@@ -57008,7 +57009,7 @@ case 5:p=4
 c=o.pop()
 h=A.a2(c)
 A.a8J("Error saving signature: "+A.n(h))
-n.c.a6(t.l).f.lO(A.acj(null,null,null,null,null,B.a1,null,new A.f0("Failed to save signature: "+A.n(h)+" and "+A.n(n.as),null,null,null,null),null,B.cq,null,null,null,null,null,null,null,null,null))
+n.c.a6(t.l).f.lO(A.acj(null,null,null,null,null,B.a1,null,new A.f0("Failed to save signature: "+A.n(h)+" url "+A.n(n.at),null,null,null,null),null,B.cq,null,null,null,null,null,null,null,null,null))
 s=7
 break
 case 4:s=2
